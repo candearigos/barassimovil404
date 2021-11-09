@@ -1,0 +1,391 @@
+.body{
+    margin:0;
+    padding: 0;
+    background-color: #68B0E0;
+}
+.header{
+    margin-bottom: -2.5%;
+}
+.header h1{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    left: 30%;
+    top:-1%
+}
+.foto404 img{
+    position: absolute;
+    left: 30%;
+    top: 23%;
+    width: 40%;
+    justify-content: center;
+    z-index: 1;
+}
+.section1{
+    display: flex;
+    flex-wrap: wrap;
+    margin:0;
+    display: flex;
+    justify-content: center;
+}
+.nubes img{
+    width: 20%;
+    z-index: -1;
+
+}
+@keyframes nube1{
+    0%{
+        right: 50%;
+        opacity: 100%;
+
+    }
+    100%{
+       right: 100%;
+       opacity: 0%;
+    }
+}
+@keyframes nube2{
+    0%{
+        right: 10%;
+        opacity: 100%
+
+    }
+    100%{
+       right: 60%;
+       opacity: 0%;
+    }
+}
+.nube2 img{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    z-index: 0;
+    animation-name: nube2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.nube1 img{
+    position: absolute;
+    top: 10%;
+    right: 50%;
+    z-index: 0;
+    animation-name: nube1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.dario img{
+    width: 80%;
+    display: flex;
+    justify-content: flex-end;
+    transform: translateX(100px);
+}
+@keyframes palabra{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.section2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.buscador{
+    overflow: hidden;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 25%;
+}
+.buscar{
+    margin-left: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.buscar input{
+    padding: 9px 10px 9px 32px;
+    width: 4%;
+    border-radius: 15px;
+    outline: none;
+    border: 3px solid #7F44AA;
+    background: #fff url("search.icon.png") no-repeat 7px center;
+    transition: all 2s;
+}
+.buscar input:hover{
+    width:16.5%;
+    background-color: #fff;
+    border-color: rgb(11, 68, 182);
+}
+.barassimovil{
+    transform: translateY(200px);
+    margin-top: -10%;
+    z-index: 1;
+}
+.barassimovil img{
+    width: 40%;
+    animation-name: auto;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.rueda1 img{
+    width: 6%;
+    border-radius: 50%;
+    position: absolute;
+    left: 5.5%;
+    bottom:-48%;
+    animation-name: rueda1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+.rueda2 img{
+    width: 6%;
+    border-radius: 50%;
+    position: absolute;
+    left: 25.5%;
+    bottom:-48%;
+    animation-name: rueda2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes rueda1{
+    0%{
+        left:5.5%;
+        transform: rotate(0deg);
+    }
+    100%{
+        left: 53%;
+        transform: rotate(360deg);
+    }
+}
+@keyframes rueda2{
+    0%{
+        left:25.5%;
+        transform: rotate(0deg);
+    }
+    100%{
+        left: 73%;
+        transform: rotate(360deg);
+    }
+}
+.humo img{
+    overflow: hidden;
+    width: 10%;
+}
+.humo{
+    animation-name: humo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes humo {
+    0%{
+        transform: translate(-120px, 70px);
+        opacity: 0%;
+    }
+    10%{
+        opacity: 0%;
+    }
+    20%{
+        opacity: 100%;
+    }
+    30%{
+        opacity: 0%;
+    }
+    40%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 0%; 
+    }
+    60%{
+        opacity: 100%; 
+    }
+    70%{
+        opacity: 0%; 
+    }
+    80%{
+        opacity: 100%; 
+    }
+    90%{
+        opacity: 0%; 
+    }
+    100%{
+        transform: translate(480px, 70px);
+        opacity: 100%;
+    }
+     
+}
+.calle img{
+    width:100%;
+    margin-bottom: -15%;
+}
+
+@keyframes auto{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(600px)
+    }
+    
+}
+.cartel{
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    transform: translateY(-200px);
+    justify-content: flex-end;
+}
+.cartel img{
+    width: 11%;
+
+}
+.cartel h3{
+    font-family: 'Shadows Into Light', cursive;
+    transform: translateX(110px);
+    text-align: center;
+    font-size: 28px;
+    color: white;
+}
+.cartel a{
+    text-decoration: none;
+    color: #68B0E0;
+}
+.cartel a:hover{
+    color: rgb(255, 113, 113);
+}
+.footer{
+    width: 100%;
+    font-size: 20px;;
+    font-family: 'Shadows Into Light', cursive;
+    display: flex;
+    justify-content: center;
+    background-color: #848484;
+    margin-top: -4%;
+}
+.contenedora{
+    display: none;
+}
+
+@media(min-width: 580px) and (max-width: 989px){
+    .header h1{
+        left: 18%;
+        }
+    .foto404 img{
+        top: 10%;
+        left: 10%;
+        width: 80%;
+        }  
+    .buscador{
+        margin-top: 45%;
+        }
+        .cartel{
+            transform: translateY(-100px);
+            z-index: 2;
+        }
+        .cartel h3{
+            transform: translateX(70px);
+            font-size: 20px;
+        }
+        .humo img{
+            overflow: hidden;
+            width: 10%;
+            margin-top: 5%;
+        }
+        .nubes{
+            display: none;
+        }
+        .rueda1, .rueda2{
+            display: none;
+        }
+}
+@media screen and (max-width: 580px){
+.header h1{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 34px;
+    left: 0%;
+    padding: 1%;
+    padding-right: 2%;
+    background-color:rgb(150, 48, 181)
+    }
+.foto404 img{
+    left: 10%;
+    top: 7%;
+    width: 80%;
+    margin-top: 20%;
+    }
+.buscador{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 70%;
+}
+.buscar input:hover{
+    width:40%;
+    background-color: #fff;
+    border-color: rgb(11, 68, 182);
+}
+.barassimovil{
+    display: none;
+}
+.cartel{
+    display: none;
+}
+.calle{
+    display: none;
+}
+.contenedora{
+    display: flex;
+    margin-bottom: -4%;
+    margin-top: 10%;
+}
+@keyframes movimiento {
+    0%{
+       transform: rotate(-2deg);
+    }
+    100%{
+        transform: rotate(-10deg);
+    }
+}
+.explicando img{
+    width: 100%;
+}
+.mano img{
+    width: 30%;
+    position: absolute;
+    right: 30%;
+    bottom: 1%;
+    animation-name: movimiento;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    transform:rotate(15deg);
+    z-index: 1;
+}
+.texto2{
+    position: absolute;
+    right: 47%;
+    bottom: 8.5%;
+    font-size: 20px;
+    font-family: 'Shadows Into Light', cursive;
+    display: flex;
+    text-align: center;
+    transform: rotate(-8deg);
+    line-height : 40px;
+}
+.texto2 a{
+    text-decoration: none;
+    background-color: rgb(113, 28, 138);
+    color: white; 
+    border-radius: 5px;
+    padding: 3%;
+}
+.nubes{
+    display: none;
+}
+.rueda1, .rueda2{
+    display: none;
+}
+}
